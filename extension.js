@@ -198,8 +198,7 @@ function activate(context) {
 exports.activate = activate;
 
 function buildBodyFromText(text) {
-    var fixed = text.replace(/\t/g, '\\t');
-    return fixed.split("\n");
+    return text.split("\n");
 }
 
 function jsonFromText(text) {
